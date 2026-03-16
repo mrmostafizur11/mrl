@@ -144,6 +144,6 @@ button:hover { filter: brightness(1.2); }
     white-space: pre-wrap;
     font-family: 'Courier New', monospace;
     border-left: 4px solid var(--primary);
-    max-height: 300px;
+    max-height: 1000px;
     overflow-y: auto;
 }
