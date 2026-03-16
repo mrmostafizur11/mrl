@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>MR.MOSTAFIZUR°°</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="settingsModal" class="modal">
+   
+    <div class="modal-content">
+        <img src="loo.png" style="width: 70px; height: 250px; border-radius: 50%; border:; margin-bottom: ;">
+      <div>  <h2 style="color:#ff000a;               margin-bottom:10px;        font-size: 30px;                font-weight: bold;                display: inline-block;                border-bottom: 2px solid #50ff00;                padding-bottom: 5px;">ডেভেলপার সম্পর্কে</h2></div>
+        <p>আসসালামু আলাইকুম। আশা করি সবাই আল্লাহর রহমতে ভালো আছেন। আমি একজন জুনিয়র অ্যাপ ডেভেলপার। আমি আমার সর্বাত্মক প্রচেষ্টায় আপনাদের জন্য এই অ্যাপটি তৈরি করেছি। যদি এই অ্যাপগুলির মধ্যে কোথাও কোন সমস্যা থাকে অথবা আপনাদের কোন পরামর্শ থাকে তাহলে অবশ্যই আমাকে জানাবেন। আর যদি কোথাও কোন ভুল থাকে, তাহলে আমাকে ক্ষমা করে দেবেন কারণ আমিও আপনাদের মতোই একজন মানুষ। আর আপনাদের কোন চিন্তাভাবনা বা আইডিয়া থাকলে আমাকে জানাতে ভুলবেন না। আমরা আপনাদের চিন্তাভাবনা বা আইডিয়া নিয়ে কাজ শুরু করব। মনে রাখবেন আপনাদের একটি আইডিয়া আমাদের চিন্তাভাবনা বা কাজ করার ধরণ বদলে দিতে পারে।</p>  
+        <img src="logo.png" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid #00ffff; margin-bottom: ;">       
+        <div>  <h2 style="color:#ff000a;               margin-bottom:10px;        font-size: 30px;                font-weight: bold;                display: inline-block;                border-bottom: 2px solid #50ff00;                padding-bottom: 5px;">যে কাজ করতে পারবেন</h2></div>
+        <li>এখান থেকে আপনি আপনার মনের মতন ক্যাপশন থেকে হাজার হাজার লাইন তৈরি করে নিতে পারবেন।</li>
+      <li>প্রথমে ক্যাপশন দিন। </li>
+      <li>দ্বিতীয় তে কত লাইন চান।</li>
+      <li>⚠️সর্বোচ্চ ৫০০ লাইন, তার বেশি দিলে আপনার ফোন ল্যাক দিতে পারে।..</li>
+      <li></li>
+      <li></li>
+          <div style="display: inline-flex;align-items: center;justify-content: center;border: 1px solid #3bff00;padding: 5px 15px; border-radius: 50px;white-space: nowrap;       font-size: 12px;color: var(--text-main);       background: rgba(255, 255, 255, 0.05);">
+        নিচের দেওয়া লোগতে ক্লিক করে আমাদের সাথে যোগাযোগ করতে পারেন
+        </div>
+        <div class="social-links" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 20px;">
+                                 <a href="https://www.facebook.com/profile.php?id=61579692970258" target="_blank">
+                        <img src="fb.png" alt="FB" class="social-img" style="width: 35px; height: 35px;">
+                    </a>
+                    <a href="https://t.me/mrmostafizurr" target="_blank">
+                        <img src="tg.png" alt="TG" class="social-img" style="width: 35px; height: 35px;">
+                    </a>       <a href="https://wa.me/8801341960584" target="_blank">
+                        <img src="wa.png" alt="W" class="social-img" style="width: 35px; height: 35px;">
+                    </a></div>
+         <p style="font-size: 13px; color: #6b6b6b; margin-bottom: 15px;">Android App Developer & Content Creator</p>
+        <button class="close-btn" onclick="toggleModal();playClickSound();">❎হোম পেজ এ যান❎</button>
+    </div>
+</div>
+
+<div class="app-container" id="appContent">
+    <div class="box">
+        <h2>>>>MR >TEXT< CONVATER∞</h2>
+        <label>আপনার ক্যাপশন টি লিখুন:</label>
+        <input type="text" id="userInput" placeholder="এখানে টাইপ করুন...">
+        
+        <label>কতগুলো লাইন চান:</label>
+        <input type="number" id="lineCount" value="20">
+
+        <div class="btn-group">
+            <button class="gen-btn" onclick="generatePattern();playClickSound();">🔎জেনারেট করুন</button>
+<button class="copy-btn" onclick="copyToClipboard(); playClickSound();">📋কপি করুন</button>
+
+        </div>
+        
+        <div id="output">আউটপুট এখানে দেখা যাবে...</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
