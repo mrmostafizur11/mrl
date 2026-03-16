@@ -1,0 +1,149 @@
+/* style.css - ফিক্সড ৫ পিক্সেল গ্যাপ ও কাস্টম টিটিএফ ফন্ট সাপোর্ট */
+
+/* বাংলা ফন্ট রেজিস্টার */
+@font-face {
+    font-family: 'MyBanglaFont';
+    src: url('mm.ttf') format('truetype');
+}
+
+/* ইংরেজি ফন্ট রেজিস্টার */
+@font-face {
+    font-family: 'MyEnglishFont';
+    src: url('mn.ttf') format('truetype');
+}
+
+/* style.css - ফিক্সড লেআউট ও প্রফেশনাল ডিজাইন */
+
+:root {
+    --primary: #00adb5;
+    --text-main: #e0e0e0;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* মোডাল বা নোটিশ প্যানেল */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 5px; /* আপনার চাহিদা অনুযায়ী ৫ পিক্সেল গ্যাপ */
+    box-sizing: border-box;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    margin: ; /* ফিক্সড পজিশনের জন্য */
+    box-sizing: border-box;
+}
+
+/* মোডাল ক্লোজ বাটন */
+.close-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.close-btn:hover {
+    background-color: #008c92;
+}
+
+/* মূল অ্যাপ কন্টেইনার (ফিক্সড) */
+.app-container {
+    display: none; /* শুরুতে লুকানো থাকবে */
+    width: 100%; /* পুরো স্ক্রিন দখল করবে */
+    padding: 5px; /* উভয় পাশে ৫ পিক্সেল গ্যাপ */
+    box-sizing: border-box; /* গ্যাপটা যাতে মূল চওড়ার ভেতরে থাকে */
+    display: flex; /* ফ্লেক্স ব্যবহার করছি সেন্টারিং এর জন্য */
+    justify-content: center; /* হরাইজন্টালি সেন্টারে রাখবে */
+    align-items: flex-start; /* উপর থেকে শুরু হবে */
+    min-height: 100vh;
+}
+
+.box {
+    width: 100%;
+    max-width: 500px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    /* margin: 5px; - এই মার্জিনটি সরিয়ে দিন, কারণ উপরে প্যাডিং ব্যবহার করা হয়েছে */
+    box-sizing: border-box;
+}
+
+/* ইনপুট ফিল্ড ও বাটন স্টাইল */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #252525;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.gen-btn { background-color: var(--primary); color: white; }
+.copy-btn { background-color: #393e46; color: var(--primary); border: 1px solid var(--primary); }
+button:hover { filter: brightness(1.2); }
+
+/* আউটপুট বক্স */
+#output {
+    margin-top: 20px;
+    background: #000;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    border-left: 4px solid var(--primary);
+    max-height: 300px;
+    overflow-y: auto;
+}
